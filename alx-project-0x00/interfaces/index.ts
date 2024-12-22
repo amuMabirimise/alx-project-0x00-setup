@@ -1,1 +1,4 @@
-//creating empty files//
+export interface PillProps {
+    title: string;
+  }
+  
