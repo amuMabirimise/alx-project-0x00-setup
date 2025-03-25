@@ -1,17 +1,20 @@
+// pages/landing.tsx
 import React from "react";
-import Card from "@/components/Card";
+import Button from "@/components/Button";
 
-const LandingPage: React.FC = () => {
+const Landing = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-4">Landing Page</h1>
+    <div className="p-4">
+      <h1 className="text-3xl font-bold mb-4">Landing Page</h1>
 
-      {/* Render the Card component multiple times */}
-      <Card />
-      <Card />
-      <Card />
+      {/* Create multiple instances of the Button component */}
+      <div className="space-x-4">
+        <Button title="Small Button" size="small" shape="rounded-sm" />
+        <Button title="Medium Button" size="medium" shape="rounded-md" />
+        <Button title="Large Button" size="large" shape="rounded-full" />
+      </div>
     </div>
   );
 };
 
-export default LandingPage;
+export default Landing;
