@@ -1,13 +1,11 @@
+// components/Pill.tsx
 import React from "react";
-
-interface PillProps {
-  title: string;
-}
+import { PillProps } from "@/interfaces";
 
 const Pill: React.FC<PillProps> = ({ title }) => {
   return (
-    <div className="bg-[#E8F5E9] text-[#388E3C] rounded-full px-4 py-1 text-sm font-medium">
-      {title}
+    <div className="flex justify-center items-center bg-[#F9F9F9] px-3 w-auto h-[27px] rounded-full">
+      <p className="text-sm">{title}</p>
     </div>
   );
 };
